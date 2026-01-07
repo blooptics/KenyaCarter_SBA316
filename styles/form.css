@@ -32,17 +32,17 @@
     width: 90%;
     max-width: 500px;
     padding: 50px 30px 20px;
-    background: #fff;
+    background: #f2d1c9;
     border-radius: 4px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
     position: relative;
 }
-[class = "fa-light fa-envelope-circle-check"]{
+.container i{
     position: absolute;
     top: 0;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: #fbd8d8;
+    background: #f2d1c9;
     font-size: 26px;
     padding: 20px;
     border-radius: 50%;

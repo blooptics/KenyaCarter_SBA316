@@ -91,7 +91,7 @@ body{
 .carousel{
     margin: 100px auto;
     width: 90%;
-    border: 5px solid #f2d1c9;
+    /* border: 5px solid #f2d1c9; */
     display: flex;
     overflow-x: auto;
     z-index: 1;
