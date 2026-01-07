@@ -88,6 +88,9 @@ body{
     animation: spins 20s infinite linear;
     padding-right: 1em;
 }
+
+
+/*  */
 .carousel{
     margin: 100px auto;
     width: 90%;
@@ -115,7 +118,7 @@ body{
     from{translate: 0;}
     to {translate: -100%;}
 }
-
+/*  */
 .txtloop {
     position: fixed;   
     top: 0;

@@ -22,7 +22,7 @@ function validateName() {
 
     // first name and inital
     if (!nameValue.match(/^[A-Za-z]+\s{1}[A-Za-z]+$/)) {
-        nameError.innerHTML = "❌";
+        nameError.innerHTML = "❌ First name and last initial";
         return false;
     }
 
