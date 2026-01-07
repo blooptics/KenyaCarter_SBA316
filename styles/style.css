@@ -7,6 +7,7 @@
 
 body{
     background: #462749;
+    
 }
 
 .app{
@@ -16,6 +17,7 @@ body{
     margin: 100px auto 0;
     border-radius: 10px;
     padding: 30px;
+    
 }
 .app h1{
     font-size: 25px;
@@ -23,6 +25,7 @@ body{
     font-weight: 600;
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
+    z-index: 2;
 }
 
 .quiz h2{
@@ -30,6 +33,7 @@ body{
     color: #462749;
     font-weight: 600;
     padding: 5px;
+    z-index: 2;
 }
 .btn{
     background:#bad1cd ;
@@ -41,15 +45,18 @@ body{
     margin: 10px 0;
     text-align: left;
     transition: all 0.3s;
+    z-index: 2;
 }
 
 .btn:hover:not([disabled]){
     background: #8332ac;
     color: #fff;
+    z-index: 2;
 }
 
 .btn:disabled{
     cursor: no-drop;
+    z-index: 2;
 }
 
 #next-button{
@@ -63,6 +70,7 @@ body{
     border-radius: 4px;
     cursor: pointer;
     display: none;
+    z-index: 2;
 }
 
 .correct{
@@ -71,4 +79,73 @@ body{
 
 .incorrect{
     background: #f9a2a2;
+    z-index: 2;
+}
+.group{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    animation: spins 20s infinite linear;
+    padding-right: 1em;
+}
+.carousel{
+    margin: 100px auto;
+    width: 90%;
+    border: 5px solid #f2d1c9;
+    display: flex;
+    overflow-x: auto;
+    z-index: 1;
+}
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    /* background: #a2f9c7; */
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+    z-index: 1;
+}
+@keyframes spin{
+    from{translate: 0;}
+    to {translate: -100%;}
+}
+
+.txtloop {
+    position: fixed;   
+    top: 0;
+    left: 0;
+    width: 100%;       
+    display: flex;
+    overflow: hidden; 
+    z-index: 1000;     
+    background: #462749; 
+}
+
+.tgroup {
+    display: flex;
+    flex-shrink: 0; 
+    align-items: center;
+    gap: 1em;
+    animation: spins 20s infinite linear;
+    min-width: 100%;   
+}
+
+@keyframes spins {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+
+.txtloop:hover .tgroup {
+    animation-play-state: paused;
+}
+.tcard a{
+    text-decoration: none;
+    color: #f2d1c9;
 }

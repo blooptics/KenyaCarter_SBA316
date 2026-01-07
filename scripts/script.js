@@ -16,9 +16,9 @@ const questions = [
         question: "Look at all those.....",
         answers:[
             {text: "Steak!", correct: false},
-            {text: "Ribs", correct: false},
+            {text: "Ribs!", correct: false},
             {text: "Chickens!", correct: true},
-            {text: "Cheesecake", correct: false},
+            {text: "Cheesecake!", correct: false},
 
         ]
     },
@@ -56,6 +56,7 @@ const questions = [
 let questonElement = document.getElementById("question");
 let answerButtons = document.getElementById("answer-button");
 let nextButton = document.getElementById("next-button");
+let suggestButton = document.getElementById("suggest-button");
 
 // Question number and score we are changing
 
