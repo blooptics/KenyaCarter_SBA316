@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Kenya Carter</h1>
 <h3 align="center">A passionate frontend developer from Detroit</h3>
 
-- 🔭 I’m currently working on a project that gauges my understanding of DOM manipulating by making a personalized quiz. **SBA 316**
+- 🔭 I’m currently working on a project that gauges my understanding of DOM manipulating by making a Gen Z quiz. **SBA 316**
 
 - 🌱 I’m currently learning **DOM Manipulating**
 
