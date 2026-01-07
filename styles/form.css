@@ -99,3 +99,37 @@ form button{
 .play-btn{
     text-decoration: none;
 }
+
+.txtloop {
+    position: fixed;   
+    top: 0;
+    left: 0;
+    width: 100%;       
+    display: flex;
+    overflow: hidden; 
+    z-index: 1000;     
+    background: #462749; 
+}
+
+.tgroup {
+    display: flex;
+    flex-shrink: 0; 
+    align-items: center;
+    gap: 1em;
+    animation: spins 20s infinite linear;
+    min-width: 100%;   
+}
+
+@keyframes spins {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+
+.txtloop:hover .tgroup {
+    animation-play-state: paused;
+}
+.tcard a{
+    text-decoration: none;
+    color: #f2d1c9;
+}
